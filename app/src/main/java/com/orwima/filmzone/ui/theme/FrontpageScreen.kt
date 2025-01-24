@@ -61,17 +61,29 @@ data class Movie(
     val genre: String
 )
 
-// Simulirana baza podataka
 val movies = listOf(
     Movie("Mad Max", "A high-octane action film", "Action"),
-    Movie("Die Hard", "A cop saves the day", "Action"),
-    Movie("Gladiator", "A Roman epic", "Action"),
+    Movie("John Wick", "An ex-hitman seeks revenge", "Action"),
+    Movie("The Dark Knight", "Batman faces his toughest challenge yet", "Action"),
     Movie("Inception", "A mind-bending thriller", "Sci-Fi"),
     Movie("Interstellar", "A journey through space", "Sci-Fi"),
+    Movie("The Matrix", "A hacker discovers the truth about reality", "Sci-Fi"),
     Movie("The Hangover", "A comedy about a wild night", "Comedy"),
-    Movie("Superbad", "Teen comedy classic", "Comedy")
-    // Dodaj ostale filmove...
+    Movie("Superbad", "Teen comedy classic", "Comedy"),
+    Movie("Mean Girls", "High school drama and comedy", "Comedy"),
+    Movie("Step Brothers", "Two grown men become stepbrothers", "Comedy"),
+    Movie("Bridesmaids", "A wedding leads to hilarious chaos", "Comedy"),
+    Movie("The Exorcist", "A young girl becomes possessed by a demon", "Horror"),
+    Movie("Hereditary", "A family is haunted by dark secrets", "Horror"),
+    Movie("A Quiet Place", "A family struggles to survive in silence", "Horror"),
+    Movie("Seven", "Two detectives hunt a serial killer", "Thriller"),
+    Movie("Gone Girl", "A husband becomes a suspect in his wife's disappearance", "Thriller"),
+    Movie("Shutter Island", "A detective uncovers a dark secret on an island", "Thriller"),
+    Movie("The Notebook", "A timeless love story", "Romance"),
+    Movie("Titanic", "A tragic love story on the doomed ship", "Romance"),
+    Movie("Pride and Prejudice", "A classic tale of love and misunderstandings", "Romance")
 )
+
 
 @Composable
 fun ScreenTitle(title: String, subtitle: String) {
@@ -123,7 +135,7 @@ fun Frontpage(navController: NavController, favorites: MutableList<Movie>) {
                 }
             }
 
-            MovieCategories(navController, favorites)  // Prosleđujemo favorites ovde
+            MovieCategories(navController, favorites)  // Prosljeđujemo favorites ovdje
         }
     }
 }
