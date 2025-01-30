@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             FilmZoneTheme {
-                MainScreen() // Postavlja navigaciju kao osnovu
+                MainScreen()
             }
         }
     }
