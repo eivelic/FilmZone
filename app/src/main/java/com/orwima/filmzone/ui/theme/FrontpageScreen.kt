@@ -212,7 +212,7 @@ fun Frontpage(navController: NavController, favorites: MutableList<Movie>) {
                 modifier = Modifier
                     .padding(top = 28.dp))
 
-            MovieCategories(navController, favorites) // Prosljeđujemo favorites ovdje
+            MovieCategories(navController, favorites)
 
             HotMoviesCard(navController)
         }

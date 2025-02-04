@@ -35,7 +35,7 @@ fun AddMovieToFavorites(movie: Movie, favorites: MutableList<Movie>) {
             .background(Indigo, RoundedCornerShape(8.dp))
             .padding(16.dp)
     ) {
-        // Movie content within Row
+
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -74,18 +74,18 @@ fun AddMovieToFavorites(movie: Movie, favorites: MutableList<Movie>) {
             }
         }
 
-        // IconButton positioned at the top-right corner
+
         IconButton(
             onClick = {
                 if (favorites.contains(movie)) {
-                    favorites.remove(movie)  // Remove from favorites
+                    favorites.remove(movie)
                 } else {
-                    favorites.add(movie)  // Add to favorites
+                    favorites.add(movie)
                 }
             },
             modifier = Modifier
-                .align(Alignment.TopEnd)  // Align to top-right corner of Box
-                .padding(8.dp)  // Optional: Adjust padding as needed
+                .align(Alignment.TopEnd)
+                .padding(8.dp)
         ) {
             Icon(
                 painter = painterResource(id = R.drawable.ic_star),

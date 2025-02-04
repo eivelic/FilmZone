@@ -25,7 +25,7 @@ import com.orwima.filmzone.R
 
 @Composable
 fun GenreScreen(genre: String, navController: NavController, favorites: MutableList<Movie>) {
-    val genreMovies = favorites.filter { it.genre == genre }  // Prikazujemo samo filmove koji su u favoritima
+    val genreMovies = favorites.filter { it.genre == genre }
 
     Image(
         painter = painterResource(id = R.drawable.imagetwo),
@@ -53,7 +53,7 @@ fun GenreScreen(genre: String, navController: NavController, favorites: MutableL
 
 
         genreMovies.forEach { movie ->
-            AddMovieToFavorites(movie, favorites)  // Prikazujemo samo filmove iz favorita
+            AddMovieToFavorites(movie, favorites) 
         }
 
         Button(onClick = { navController.popBackStack() }) {

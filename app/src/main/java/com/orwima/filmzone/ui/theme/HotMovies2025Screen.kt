@@ -38,29 +38,27 @@ fun HotMoviesCard(navController: NavController) {
             .fillMaxWidth()
             .padding(16.dp)
             .clickable {
-                // Navigiraj na drugi ekran kada se kartica klikne
                 navController.navigate("hot_movies_2025")
             },
-        shape = RoundedCornerShape(10.dp) // Oblik kartice
+        shape = RoundedCornerShape(10.dp)
     ) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(200.dp) // Postavite željenu visinu Card-a
+                .height(200.dp)
         ) {
             Image(
                 painter = painterResource(id = R.drawable.imageone),
                 contentDescription = "Pozadina za 2025 movie ekran",
                 modifier = Modifier.fillMaxSize(),
-                contentScale = ContentScale.Crop // Osigurava da slika popuni cijeli prostor
+                contentScale = ContentScale.Crop
             )
 
-            // Ovdje se dodaje tekst koji će biti preko slike
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp),
-                horizontalAlignment = Alignment.CenterHorizontally // Centriranje teksta
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
                     text = "\uD83D\uDD25 HOT MOVIES OF 2025 \uD83D\uDD25",
@@ -88,7 +86,7 @@ fun HotMovies2025Screen(navController: NavController) {
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState()),
-            horizontalAlignment = Alignment.CenterHorizontally// Omogućava vertikalno pomicanje
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
                 text = "Check out the hot takes!",
@@ -106,12 +104,12 @@ fun HotMovies2025Screen(navController: NavController) {
                     .padding(top = 20.dp)
                     .padding(start = 90.dp)
                     .padding(end = 90.dp)
-                    .background(Color.Gray, shape = RoundedCornerShape(8.dp)) // Postavljanje pozadine s zaobljenim rubovima
-                    .padding(16.dp) // Unutarnje margine za tekst
+                    .background(Color.Gray, shape = RoundedCornerShape(8.dp))
+                    .padding(16.dp)
             ) {
                 Text(
                     text = "Pre-Order Now!",
-                    modifier = Modifier.fillMaxWidth(), // Tekst zauzima cijeli prostor box-a
+                    modifier = Modifier.fillMaxWidth(),
                     style = TextStyle(
                         textAlign = TextAlign.Center,
                         fontSize = 20.sp,
@@ -120,15 +118,15 @@ fun HotMovies2025Screen(navController: NavController) {
                 )
             }
             Column(modifier = Modifier.padding(16.dp)) {
-                // Movie 1
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 8.dp)
                         .padding(top = 30.dp)
-                        .background(Color(0xff616161), RoundedCornerShape(10.dp)) // Plava pozadina
-                        .border(1.dp, Color.White, RoundedCornerShape(10.dp)) // Tanki bijeli obrub
-                        .padding(16.dp) // Unutarnji razmak
+                        .background(Color(0xff616161), RoundedCornerShape(10.dp))
+                        .border(1.dp, Color.White, RoundedCornerShape(10.dp))
+                        .padding(16.dp)
                 ) {
                     Column {
                         Text(
@@ -169,15 +167,15 @@ fun HotMovies2025Screen(navController: NavController) {
                     }
                 }
 
-                // Movie 2
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 8.dp)
                         .padding(top = 30.dp)
-                        .background(Color(0xff616161), RoundedCornerShape(10.dp)) // Plava pozadina
-                        .border(1.dp, Color.White, RoundedCornerShape(10.dp)) // Tanki bijeli obrub
-                        .padding(16.dp) // Unutarnji razmak
+                        .background(Color(0xff616161), RoundedCornerShape(10.dp))
+                        .border(1.dp, Color.White, RoundedCornerShape(10.dp))
+                        .padding(16.dp)
                 ) {
                     Column {
                         Text(
@@ -185,7 +183,7 @@ fun HotMovies2025Screen(navController: NavController) {
                             style = TextStyle(
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = Color.White // Bijeli tekst za bolji kontrast
+                                color = Color.White
                             )
                         )
                         Text(
@@ -218,15 +216,15 @@ fun HotMovies2025Screen(navController: NavController) {
                     }
                 }
 
-                // Movie 3
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 8.dp)
                         .padding(top = 30.dp)
-                        .background(Color(0xffef9a9a), RoundedCornerShape(10.dp)) // Plava pozadina
-                        .border(1.dp, Color.White, RoundedCornerShape(10.dp)) // Tanki bijeli obrub
-                        .padding(16.dp) // Unutarnji razmak
+                        .background(Color(0xffef9a9a), RoundedCornerShape(10.dp))
+                        .border(1.dp, Color.White, RoundedCornerShape(10.dp))
+                        .padding(16.dp)
                 ) {
                     Column {
                         Text(
@@ -234,7 +232,7 @@ fun HotMovies2025Screen(navController: NavController) {
                             style = TextStyle(
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = Color.White // Bijeli tekst za bolji kontrast
+                                color = Color.White
                             )
                         )
                         Text(
@@ -267,15 +265,15 @@ fun HotMovies2025Screen(navController: NavController) {
                     }
                 }
 
-                // Movie 4
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 8.dp)
                         .padding(top = 30.dp)
-                        .background(Color(0xff616161), RoundedCornerShape(10.dp)) // Plava pozadina
-                        .border(1.dp, Color.White, RoundedCornerShape(10.dp)) // Tanki bijeli obrub
-                        .padding(16.dp) // Unutarnji razmak
+                        .background(Color(0xff616161), RoundedCornerShape(10.dp))
+                        .border(1.dp, Color.White, RoundedCornerShape(10.dp))
+                        .padding(16.dp)
                 ) {
                     Column {
                         Text(
@@ -283,7 +281,7 @@ fun HotMovies2025Screen(navController: NavController) {
                             style = TextStyle(
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = Color.White // Bijeli tekst za bolji kontrast
+                                color = Color.White
                             )
                         )
                         Text(
@@ -316,15 +314,15 @@ fun HotMovies2025Screen(navController: NavController) {
                     }
                 }
 
-                // Movie 5
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 8.dp)
                         .padding(top = 30.dp)
-                        .background(Color(0xff616161), RoundedCornerShape(10.dp)) // Plava pozadina
-                        .border(1.dp, Color.White, RoundedCornerShape(10.dp)) // Tanki bijeli obrub
-                        .padding(16.dp) // Unutarnji razmak
+                        .background(Color(0xff616161), RoundedCornerShape(10.dp))
+                        .border(1.dp, Color.White, RoundedCornerShape(10.dp))
+                        .padding(16.dp)
                 ) {
                     Column {
                         Text(
@@ -332,7 +330,7 @@ fun HotMovies2025Screen(navController: NavController) {
                             style = TextStyle(
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = Color.White // Bijeli tekst za bolji kontrast
+                                color = Color.White
                             )
                         )
                         Text(
@@ -365,15 +363,15 @@ fun HotMovies2025Screen(navController: NavController) {
                     }
                 }
 
-                //Movie 6
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 8.dp)
                         .padding(top = 30.dp)
-                        .background(Color(0xff616161), RoundedCornerShape(10.dp)) // Plava pozadina
-                        .border(1.dp, Color.White, RoundedCornerShape(10.dp)) // Tanki bijeli obrub
-                        .padding(16.dp) // Unutarnji razmak
+                        .background(Color(0xff616161), RoundedCornerShape(10.dp))
+                        .border(1.dp, Color.White, RoundedCornerShape(10.dp))
+                        .padding(16.dp)
                 ) {
                     Column {
                         Text(
@@ -381,7 +379,7 @@ fun HotMovies2025Screen(navController: NavController) {
                             style = TextStyle(
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = Color.White // Bijeli tekst za bolji kontrast
+                                color = Color.White
                             )
                         )
                         Text(
@@ -414,15 +412,15 @@ fun HotMovies2025Screen(navController: NavController) {
                     }
                 }
 
-                //Movie 7
+
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 8.dp)
                         .padding(top = 30.dp)
-                        .background(Color(0xff616161), RoundedCornerShape(10.dp)) // Plava pozadina
-                        .border(1.dp, Color.White, RoundedCornerShape(10.dp)) // Tanki bijeli obrub
-                        .padding(16.dp) // Unutarnji razmak
+                        .background(Color(0xff616161), RoundedCornerShape(10.dp))
+                        .border(1.dp, Color.White, RoundedCornerShape(10.dp))
+                        .padding(16.dp)
                 ) {
                     Column {
                         Text(
@@ -430,7 +428,7 @@ fun HotMovies2025Screen(navController: NavController) {
                             style = TextStyle(
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = Color.White // Bijeli tekst za bolji kontrast
+                                color = Color.White
                             )
                         )
                         Text(
@@ -466,12 +464,12 @@ fun HotMovies2025Screen(navController: NavController) {
 
                 Spacer(modifier = Modifier.height(16.dp))
 
-                // Dodaj dugme za povratak unazad
+
                 Button(
                     onClick = { navController.popBackStack() },
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(horizontal = 100.dp) // Postavlja jednaku udaljenost s obje strane
+                        .padding(horizontal = 100.dp)
                 ) {
                     Text("Back")
                 }
