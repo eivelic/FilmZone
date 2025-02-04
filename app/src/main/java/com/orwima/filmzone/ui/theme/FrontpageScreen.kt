@@ -193,7 +193,7 @@ val movies = listOf(
 
 
 @Composable
-fun Frontpage(navController: NavController, favorites: MutableList<Movie>) {
+fun Frontpage(navController: NavController) {
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
             painter = painterResource(id = R.drawable.imagetwo),
@@ -212,7 +212,7 @@ fun Frontpage(navController: NavController, favorites: MutableList<Movie>) {
                 modifier = Modifier
                     .padding(top = 28.dp))
 
-            MovieCategories(navController, favorites)
+            MovieCategories(navController)
 
             HotMoviesCard(navController)
         }
@@ -255,7 +255,7 @@ fun MainScreen() {
 
     NavHost(navController, startDestination = "home") {
         composable("home") {
-            Frontpage(navController, favorites)
+            Frontpage(navController)
         }
         composable("searchResults/{query}") { backStackEntry ->
             val query = backStackEntry.arguments?.getString("query") ?: ""

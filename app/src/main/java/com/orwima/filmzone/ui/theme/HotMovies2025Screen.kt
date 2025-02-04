@@ -134,7 +134,7 @@ fun HotMovies2025Screen(navController: NavController) {
                             style = TextStyle(
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = Color.White // Bijeli tekst za bolji kontrast
+                                color = Color.White
                             )
                         )
                         Text(

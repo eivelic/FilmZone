@@ -53,7 +53,7 @@ fun GenreScreen(genre: String, navController: NavController, favorites: MutableL
 
 
         genreMovies.forEach { movie ->
-            AddMovieToFavorites(movie, favorites) 
+            AddMovieToFavorites(movie, favorites)
         }
 
         Button(onClick = { navController.popBackStack() }) {

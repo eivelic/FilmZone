@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 @Composable
-fun MovieCategories(navController: NavController, favorites: MutableList<Movie>) {
+fun MovieCategories(navController: NavController) {
     val categories = listOf("Action", "Thriller", "Horror", "Comedy", "Romance", "Sci-Fi")
 
     Column(
